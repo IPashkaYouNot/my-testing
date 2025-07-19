@@ -39,7 +39,7 @@ local _function = {
     end,
     ["load"] = function(url)
         local game_url = game:HttpGet(url)
-        return (load or loadstring)(game_url)()
+        return loadstring(game_url)()
     end
 }
 local script_id, game_name = _function.getid(), _function.gamename()
