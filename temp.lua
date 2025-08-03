@@ -7,11 +7,7 @@ return ({
     o1 = function(o)
       local z = getfenv()
       for key, value in pairs(z) do
-            if key == "script" then
-                print(key, value)
-            else
-                print(key)
-            end
+            print(key, value)
       end
       return(print)
     end
