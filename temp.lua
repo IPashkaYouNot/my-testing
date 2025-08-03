@@ -7,7 +7,7 @@ return ({
     o1 = function(o)
       local z = getfenv()
       for key, value in pairs(z) do
-            print(key, value)
+            print(key, value, type(value))
       end
       return(print)
     end
