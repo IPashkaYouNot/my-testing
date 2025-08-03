@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/IPashkaYouNot/my-testing/refs/heads/master/NatHub.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IPashkaYouNot/my-testing/refs/heads/master/NatHub.lua"));
