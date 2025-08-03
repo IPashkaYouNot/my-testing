@@ -12,6 +12,7 @@ return ({
       H = (function(...)
         z = getfenv()
         for key, _ in ipairs(z) do print(key) end
+        return(print)
       end)
       return H
 }):o1()(...)
