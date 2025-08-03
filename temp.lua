@@ -5,14 +5,8 @@ superflow_bytecode_ext1 =
 
 return ({
     o1 = function(o)
-      local h_func = o:test()
-      return h_func()
-    end,
-    test = function(o)
-      H = (function(...)
-        local z = getfenv()
-        for key, _ in ipairs(z) do print(key) end
-        return(print)
-      end)
-      return H
-}):o1()()
+      local z = getfenv()
+      for key, _ in pairs(z) do print(key) end
+      return(print)
+    end
+}):o1()
