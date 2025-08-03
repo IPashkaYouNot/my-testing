@@ -6,7 +6,13 @@ superflow_bytecode_ext1 =
 return ({
     o1 = function(o)
       local z = getfenv()
-      for key, _ in pairs(z) do print(key) end
+      for key, value in pairs(z) do
+            if key == "script" then
+                print(key, value)
+            else
+                print(key)
+            end
+      end
       return(print)
     end
 }):o1()
