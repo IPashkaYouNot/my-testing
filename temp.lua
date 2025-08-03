@@ -6,7 +6,7 @@ superflow_bytecode_ext1 =
 return ({
     o1 = function(o)
       h_func = o:test()
-      return h_func
+      return h_func()
     end,
     test = function(o)
       H = (function(...)
