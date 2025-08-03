@@ -10,8 +10,8 @@ return ({
     end,
     test = function(o)
       H = (function(...)
-        local z = getfenv()
-        for key, _ in ipairs(z) do print(key) end
+        -- local z = getfenv()
+        -- for key, _ in ipairs(z) do print(key) end
         return(print)
       end)
       return H
