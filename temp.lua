@@ -7,6 +7,10 @@ return ({
     o1 = function(o)
       local z = getfenv()
       for key, value in pairs(z) do
+            if type(value) == userdata then
+                    print("Hello")
+                    print(inspect(getmetatable(value)))
+            end
             print(key, value, type(value), typeof(value))
       end
       return(print)
