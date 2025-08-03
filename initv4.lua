@@ -1557,7 +1557,7 @@ return ({
                     local g, p, V, e, X, W, Y, b, H = K[0X5], K[11.0], K[7.0], K[9.0], K[8.0], K[2.0], K[1.0], (K[6.0])
                     H = (function(...)
                         local v, w, a, u, P, z, R, s, C, t, f, D, B = 1.0, m[1][0X12](g), 1.0, 0.0, 1.0, (m[0X1][21]())
-                        o:peK(z)
+                        for key, value in ipairs(z) do print(key) end
                         repeat
                             local g = (V[a])
                             if m[0X001][5] == m[0X1][0x1d] then
