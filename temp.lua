@@ -15,4 +15,4 @@ return ({
         return(print)
       end)
       return H
-}):o1()(...)
+}):o1()()
